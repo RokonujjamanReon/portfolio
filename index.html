@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Rokonujjaman Reon, showcasing software, data, and technology projects."
+    />
+    <title>Rokonujjaman Reon | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#top">Rokonujjaman Reon</a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle menu</span>
+          ☰
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme">🌙</button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section">
+        <div class="container hero-layout">
+          <div>
+            <p class="kicker">Developer • Data • Technology</p>
+            <h1>Hi, I’m Rokonujjaman Reon.</h1>
+            <p class="lead">
+              I build practical digital products with clean engineering and data-informed thinking.
+              This portfolio is fully editable and designed to grow with your journey.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+            </div>
+          </div>
+          <div class="hero-card reveal" aria-label="Profile highlight">
+            <img
+              src="https://via.placeholder.com/420x300.png?text=Rokonujjaman+Reon"
+              alt="Placeholder profile panel for Rokonujjaman Reon"
+            />
+            <p>Replace this panel with your photo, avatar, or project screenshot.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I’m Rokonujjaman Reon. Use this section to share your background, core interests, and what
+            kind of opportunities you are currently seeking.
+          </p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div id="skills-grid" class="chips-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Projects</h2>
+            <div id="project-filters" class="filters" aria-label="Project filters"></div>
+          </div>
+          <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="journey">
+        <div class="container">
+          <h2>Journey</h2>
+          <ol id="timeline" class="timeline" aria-live="polite"></ol>
+        </div>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <div class="container contact-layout">
+          <div>
+            <h2>Contact</h2>
+            <p>
+              Share your preferred contact details and social links below. The form demonstrates
+              client-side validation only.
+            </p>
+            <ul id="social-links" class="social-links"></ul>
+          </div>
+          <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required minlength="2" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="current-year"></span> Rokonujjaman Reon. Built as a modern editable portfolio.</p>
+      </div>
+    </footer>
+  </body>
+</html>
